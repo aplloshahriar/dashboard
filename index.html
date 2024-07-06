@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/285eb7d844.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="drawer lg:drawer-open">
+      <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+      <div
+        class="drawer-content flex flex-col items-center justify-center -mt-24 -ms-32 pt-36"
+      >
+        <!-- Page content here -->
+        <!-- rounded here and make white  -->
+        <div class="flex">
+          <div class="ms-36">
+            <!-- expenses -->
+            <div class="flex justify-between -mt-16">
+              <div>
+                <h2 class="font-bold text-3xl">Expenses</h2>
+                <p class="text-gray-400 text-sm mt-2">01 - 25 March, 2020</p>
+              </div>
+              <div class="avatar-group -space-x-6 rtl:space-x-reverse ms-48">
+                <div class="avatar">
+                  <div class="w-12">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="avatar">
+                  <div class="w-12">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="avatar">
+                  <div class="w-12">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="avatar">
+                  <div class="w-12">
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-2">
+                <button
+                  class="btn btn-circle btn-outline text-2xl text-gray-400"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <!-- stats -->
+            <div class="flex gap-2 mt-8 transform rotate-180">
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-4 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-10 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-300 h-16 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-4 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-10 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-4 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-10 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-10 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-12 w-4 text-transparent">1</div>
+              <div class="bg-blue-100 h-8 w-4 text-transparent">1</div>
+            </div>
+
+            <!-- today -->
+            <div class="">
+              <div class="mt-4">
+                <div class="flex justify-between mt-4">
+                  <h2 class="text-xl font-semibold">Today</h2>
+                  <h2 class="text-gray-400 mt-2 text-3xl justify-end">...</h2>
+                </div>
+                <hr />
+                <!-- table -->
+                <div class="overflow-x-auto mt-4">
+                  <table class="table">
+                    <tbody>
+                      <!-- row 1 -->
+                      <tr>
+                        <td>
+                          <div class="flex items-center gap-3">
+                            <div class="avatar">
+                              <div class="bg-blue-400 rounded-full btn-circle">
+                                <i
+                                  class="fa-solid fa-cart-shopping text-xl ms-3 mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="font-bold">Grocery</div>
+                              <div class="text-sm opacity-50">
+                                5:12 pm • Belanja di pasar
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <th>
+                          <div class="text-md -mt-4">-326.800</div>
+                        </th>
+                      </tr>
+                      <!-- row-2 -->
+                      <tr>
+                        <td>
+                          <div class="flex items-center gap-3">
+                            <div class="avatar">
+                              <div
+                                class="bg-violet-500 rounded-full btn-circle"
+                              >
+                                <i
+                                  class="fa-solid fa-bus text-xl ms-3 mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="font-bold">Transportation</div>
+                              <div class="text-sm opacity-50">
+                                5:12 pm • Naik bus umum
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <th>
+                          <div class="text-md -mt-4">-15.000</div>
+                        </th>
+                      </tr>
+                      <!-- row-3 -->
+                      <tr>
+                        <td>
+                          <div class="flex items-center gap-3">
+                            <div class="avatar">
+                              <div
+                                class="bg-orange-400 rounded-full btn-circle"
+                              >
+                                <i
+                                  class="fa-solid fa-house text-xl ms-3 mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="font-bold">Housing</div>
+                              <div class="text-sm opacity-50">
+                                5:12 pm • Belanja di pasar
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <th>
+                          <div class="text-md -mt-4">-185.750</div>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- monday -->
+            <div class="">
+              <div class="mt-4">
+                <div class="flex justify-between mt-4">
+                  <h2 class="text-xl font-semibold">Monday, 23 March 2020</h2>
+                  <h2 class="text-gray-400 mt-2 text-3xl">...</h2>
+                </div>
+                <hr />
+                <!-- table -->
+                <div class="overflow-x-auto mt-4">
+                  <table class="table">
+                    <tbody>
+                      <!-- row 1 -->
+                      <tr>
+                        <td>
+                          <div class="flex items-center gap-3">
+                            <div class="avatar">
+                              <div class="bg-blue-400 rounded-full btn-circle">
+                                <i
+                                  class="fa-solid fa-tent text-xl ms-3 mt-2"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="font-bold">Food and Drink</div>
+                              <div class="text-sm opacity-50">
+                                5:12 pm • Belanja di pasar
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <th>
+                          <div class="text-md -mt-4">-156.000</div>
+                        </th>
+                      </tr>
+                      <!-- row-2 -->
+                      <tr>
+                        <td>
+                          <div class="flex items-center gap-3">
+                            <div class="avatar">
+                              <div class="bg-green-500 rounded-full btn-circle">
+                                <i
+                                  class="fa-solid fa-circle-play text-xl ms-3 mt-3"
+                                ></i>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="font-bold">Entertainment</div>
+                              <div class="text-sm opacity-50">
+                                5:12 pm • Naik bus umum
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+
+                        <th>
+                          <div class="text-md -mt-4">-35.000</div>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right bar -->
+          <div
+            class="menu bg-stone-100 text-black min-h-full ms-96 -mt-20 w-75 p-4"
+          >
+            <!-- Sidebar content here -->
+            <div class="ms-8">
+              <div className="ms-8">
+                <h2 class="font-bold text-xl mt-8">Where your money go?</h2>
+              </div>
+              <!-- progress -->
+              <div class="mt-8">
+                <div class="my-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-md font-semibold">Food and Drinks</h2>
+                    <p>872.400</p>
+                  </div>
+                  <progress
+                    class="progress progress-success w-56"
+                    value="30"
+                    max="100"
+                  ></progress>
+                </div>
+                <div class="my-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-md font-semibold">Shopping</h2>
+                    <p>8721.400</p>
+                  </div>
+                  <progress
+                    class="progress progress-success w-56"
+                    value="50"
+                    max="100"
+                  ></progress>
+                </div>
+                <div class="my-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-md font-semibold">Housing</h2>
+                    <p>8172.400</p>
+                  </div>
+                  <progress
+                    class="progress progress-success w-56"
+                    value="40"
+                    max="100"
+                  ></progress>
+                </div>
+                <div class="my-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-md font-semibold">Transportation</h2>
+                    <p>2872.400</p>
+                  </div>
+                  <progress
+                    class="progress progress-success w-56"
+                    value="30"
+                    max="100"
+                  ></progress>
+                </div>
+                <div class="my-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-md font-semibold">Vehicle</h2>
+                    <p>1872.400</p>
+                  </div>
+                  <progress
+                    class="progress progress-success w-56"
+                    value="40"
+                    max="100"
+                  ></progress>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-2 mt-16 ms-8">
+              <div class="bg-stone-200 h-64 w-56 rounded-xl">
+                <div class="-mt-8">
+                  <h2 class="bg-blue-500 text-transparent w-16 h-12 ms-8 mt-4">
+                    1
+                  </h2>
+                  <h2
+                    class="bg-orange-500 text-transparent w-24 h-12 ms-4 -mt-4"
+                  >
+                    1
+                  </h2>
+                </div>
+                <h2 class="font-bold mb-2 ms-2 mt-8">Save more money</h2>
+                <p class="text-stone-500 ms-2">
+                  eiusmod tempor incididunt <br />ut labore et dolore magna
+                  aliqua. Ut enim ad minim.
+                </p>
+                <button
+                  class="btn btn-neutral bg-black ms-4 w-48 mt-2 rounded-md"
+                >
+                  VIEW TIPS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <label
+          for="my-drawer-2"
+          class="btn btn-primary drawer-button lg:hidden"
+        >
+          Open drawer
+        </label>
+      </div>
+
+      <div class="drawer-side">
+        <label
+          for="my-drawer-2"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul class="menu bg-black text-white min-h-full w-80 p-4">
+          <!-- Sidebar content here -->
+          <div class="ms-16">
+            <div class="relative ms-2">
+              <img
+                class="relative rounded avatarImg mt-4"
+                src="./assets/t-15.png"
+              />
+              <h2
+                class="translate-x-20 -translate-y-28 bg-red-500 rounded-full w-8 h-8 flex justify-center font-semibold"
+              >
+                4
+              </h2>
+              <h2 class="font-bold text-3xl mb-2">Samantha</h2>
+              <p class="text-slate-400">samantha@email.com</p>
+            </div>
+          </div>
+
+          <div class="mt-12 text-3xl font-bold ms-12 text-slate-400">
+            <li class="mb-4"><a>Dashboard</a></li>
+            <li class="mb-4 text-white"><a>Expenses</a></li>
+            <li class="mb-4"><a>Wallets</a></li>
+            <li class="mb-4"><a>Summary</a></li>
+            <li class="mb-4"><a>Accounts</a></li>
+            <li><a> Settings</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
